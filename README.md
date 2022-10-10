@@ -1,6 +1,6 @@
 # Real-time-deep-happiness-detection
 The aim of the project is to feed a deep CNN with webcam inputs and evaluate if an expression is happy or not.
-The model I want to try is an ensemble forecasting system which will gather the predictions from 7 different deep CNNs trained to distinguish each a different expression from happiness.
+The model I want to try is an ensemble forecasting system which will gather the predictions from 5 different deep CNNs trained to distinguish each a different expression from happiness.
 The synthesis can be done through different voting rules, in general i found to be working nicely the Majority Voting Rule: if most of the classifiers detect happiness then the outcome shall be happiness. <br>
 
 The confidence of the accuracy can be exressed in terms of how mnay voters are in favor for *'happiness'*:<br>
