@@ -28,3 +28,10 @@ If you look sad the words should be blue. If you look happy, words sould be red 
 
 # RESULTS
 The model is not perfect. There are many things to improve, from the dataset to the ensemble forecasting itself. Under this aspect, the voting system should be able to weight more confident votes from specific voters or weighting less the most uncertain ones (i.e. surprise ~ happy so 'not happy' might actually be 'happy') 
+
+Anyways here's some outputs I tested on myself <br>
+![sad1](https://user-images.githubusercontent.com/49094051/194931473-4824c77a-013a-4e00-b2f6-162af33eed7c.PNG)
+![Capture](https://user-images.githubusercontent.com/49094051/194931475-cd0bdd8c-dd68-4fd3-baf6-3223985058c1.PNG)
+![angry](https://user-images.githubusercontent.com/49094051/194931476-3ccea384-470b-48d2-bcd6-8c43e1f5166a.PNG)
+![happy](https://user-images.githubusercontent.com/49094051/194931480-83dd68b0-4bd2-4806-98ff-0076b17e3029.PNG)
+
