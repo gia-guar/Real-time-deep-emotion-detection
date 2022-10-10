@@ -11,11 +11,20 @@ $$ confidence = \sum_{k=1}^{N} output_k /N$$
 ## 1. build and train the model 
 I trained the individual models on the Face Expression Recognition Dataset publicly available on Kaggle 
 (https://www.kaggle.com/datasets/jonathanoheix/face-expression-recognition-dataset). One inconvinience is that the size of the training elements is realitvely small; if you are
-interested in the details I suggest you to check my commented notebook on kaggle (https://www.kaggle.com/code/gianmarcoguarnier/deep-happiness-detector-pt-1) where the pipeline is 
+interested in the details I suggest you to check my commented notebook the notebook 1 where the pipeline is 
 explained step by step including a trick to super-sample up to 256x256 without any explicit command.
 
+In notebook 2 the model architecture is not discussed however, an outline of the ensemble forecasting is given. 
+
 ## 2. save the models and make the ensemble
-the ensemble voting function takes as input a parameter to explicit the voting rule and the models that contribute to the outcome
+This part refers to ModelDeployment.py where the ensemble voting function is defined. <br>
+The ensemble voting function takes as input a parameter to explicit the voting rule and the models that contribute to the outcome
 
 ## 3. deploy the models
 Open the webcam, send each frame through the ensemble function, display on screen
+
+## Bonus: Color encoding
+If you look sad the words should be blue. If you look happy, words sould be red ;)
+
+# RESULTS
+The model is not perfect. There are many things to improve, from the dataset to the ensemble forecasting itself. Under this aspect, the voting system should be able to weight more confident votes from specific voters or weighting less the most uncertain ones (i.e. surprise ~ happy so 'not happy' might actually be 'happy') 
